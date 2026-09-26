@@ -1,0 +1,16 @@
+:root {
+    --color-accent: #B7A99C;
+    --color-accent-hover: #A7907B;
+    --color-gray-100: #F2F2F2;
+    --color-gray-200: #DEDEDD;
+    --color-success: #06BA63;
+    --color-black: #272420;
+    --color-white: #fff;
+
+    --text-primary: var(--color-black);
+    --text-secondary: #93918F;
+
+    --main-font: 'Raleway';
+
+    --transition-all: all 0.3s ease;
+}

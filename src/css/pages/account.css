@@ -1,0 +1,332 @@
+.account-page {
+    height: calc(100% - 85px);
+}
+
+.account-page .main-container {
+    height: 100%;
+}
+
+.account-menu {
+    padding: 23px 30px 0;
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.account-menu .nav {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.account-menu .menu-item {
+    position: relative;
+    bottom: -1px;
+}
+
+.account-menu .menu-item .link {
+    padding: 0 10px 24px;
+    border-bottom: 1px solid transparent;
+    display: block;
+    color: var(--text-secondary);
+    transition: var(--transition-all);
+}
+
+.account-menu .menu-item:hover .link{
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
+.account-menu .menu-item .link.active {
+    border-bottom: 1px solid var(--color-black);
+    color: var(--text-primary);
+}
+
+.order-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+}
+
+.order-products .cart-item {
+    border: none;
+}
+
+.order-products .product-image {
+    max-width: 110px;
+    max-height: 98px;
+}
+
+ .order-head {
+    padding: 16px 30px;
+    display: flex;
+    border-bottom: 1px solid var(--color-gray-100);
+ }
+
+ .order-title {
+    font-size: 18px;
+ }
+
+ .order-subtitle {
+    color: var(--text-secondary);
+    margin-top: 4px;
+ }
+
+.order-preview {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.order-preview img {
+    max-height: 44px;
+}
+
+.order-toggle {
+    margin-left: 10px;
+}
+
+.order-body {
+    padding: 20px 30px 16px;
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.order-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.order:not(.is-open) .order-body {
+    display: none;
+}
+
+.order.is-open .order-preview {
+    display: none;
+}
+
+.order.is-open .order-toggle {
+    margin-left: auto;
+}
+
+.order.is-open .order-head {
+    border: none;
+}
+
+.order.is-open .order-toggle .icon {
+    transform: rotate(180deg);
+}
+
+/* Мои адреса */
+.address-list .address-card {
+    border: none;
+    border-bottom: 1px solid var(--color-gray-100);
+    display: grid;
+    grid-template-columns: 1fr 325px 40px;
+    grid-gap: 20px;
+    align-items: center;
+    padding: 16px 30px;
+}
+
+.address-card .address {
+    font-size: 18px;
+}
+
+.address-card .address-action {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.address-card .address-action .btn-default, .address-card .address-action .btn-primary {
+    width: 100%;
+}
+
+.address-card .address-action .delivery {
+    width: 100%;
+    max-width: 40px;
+}
+
+.address-list-action {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.address-list-action .btn-gray {
+    width: 333px;
+}
+
+/* Мои сертификаты */
+.cert-section {
+    padding: 25px 30px;
+    border-bottom: 1px solid var(--color-gray-100);
+}
+.cert-section .section-title {
+    color: var(--text-secondary);
+}
+
+.cert-section .cert-empty {
+    margin-top: 7px;
+}
+
+.cert-section .btn-gray {
+    margin-top: 25px;
+}
+
+.certificate-action {
+    border-left: 1px solid var(--color-gray-100);
+    padding: 25px 30px;
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.certificate-action .form-certificate {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.certificate {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.certificate .cert-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.certificate .cert-head .cert-title {
+    font-size: 18px;
+}
+
+.certificate .cert-head .cert-subtitle {
+    color: var(--text-secondary);
+}
+
+.certificate .cert-body {
+    margin-top: 20px;
+}
+
+.certificate .cert-body .info-item {
+    display: block;
+}
+
+.certificate .cert-body .info-item + .info-item {
+    margin-top: 10px;
+}
+
+.certificate:not(.is-open ) .cert-body {
+    display: none;
+}
+
+.certificate.is-open .cert-toggle {
+    transform: rotate(180deg);
+}
+
+/* Пароль */
+.password-form .form-section {
+    padding: 25px 30px;
+}
+
+.password-form .form-group {
+    max-width: 333px;
+}
+
+.password-form .form-section .btn-primary {
+    margin-top: 25px;
+}
+
+.text-info {
+    margin-bottom: 25px;
+}
+
+/* Профиль */
+.profile-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 25px 30px;
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.profile-form .form-group {
+    justify-content: end;
+}
+
+.profile-form .form-group + .form-group {
+    margin: 0;
+}
+
+@media(max-width: 768px) {
+    .account-menu {
+        overflow: auto;
+        padding: 0;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .account-menu .nav {
+        padding: 24px 30px 0;
+    }
+    .account-menu  .menu-item {
+        bottom: 0;
+    }
+    .account-menu  .menu-item .link {
+        white-space: nowrap;
+    }
+    .order-head {
+        padding-bottom: 0;
+    }
+    .order-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .order-info .info-item {
+        display: block;
+    }
+    .order-products {
+        display: flex;
+        flex-direction: column;
+    }
+    .order-products .cart-item {
+        border-bottom: 1px solid var(--color-gray-100);
+    }
+    .order-products .product-image {
+        min-width: 120px;
+        height: 115px;
+        max-height: 100%;
+    }
+
+    /* Мои адреса */
+    .address-list .address-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .address-list .address-info {
+        order: 1;
+    }
+    .address-list .delivery {
+        order: 2;
+    }
+    .address-list .address-action {
+        order: 3;
+        width: 100%;
+    }
+
+    /* Профиль */
+    .profile-form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}

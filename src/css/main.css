@@ -1,0 +1,20 @@
+@import 'variables.css';
+@import 'fonts.css';
+@import 'base.css';
+@import './ui/button.css';
+@import './ui/badge.css';
+@import './ui/backdrop.css';
+@import './ui/input.css';
+@import 'components/header.css';
+@import './components/product-card.css';
+@import './pages/catalog.css';
+@import './pages/product.css';
+@import './pages/cart.css';
+@import './pages/auth.css';
+@import './pages/account.css';
+@import './pages/contacts.css';
+@import './pages/form-page.css';
+@import './pages/material.css';
+
+/* Swiper */
+@import './swiper/swiper-bundle.min.css';

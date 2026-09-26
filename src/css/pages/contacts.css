@@ -1,0 +1,30 @@
+.contacts-page {
+    height: calc(100% - 85px);
+}
+
+.contacts-page .main-container {
+    height: 100%;
+}
+
+.contacts-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    padding: 25px 30px;
+}
+
+.contacts-section + .contacts-section {
+    border-top: 1px solid var(--color-gray-100);
+}
+
+.contacts-section .info-item {
+    gap: 7px;
+}
+
+@media(max-width: 768px) {
+    .contacts-section {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}

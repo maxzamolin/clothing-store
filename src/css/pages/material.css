@@ -1,0 +1,44 @@
+.material-section {
+    padding: 25px 30px;
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.material-section .section-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.material-page ul {
+    padding-left: 1em;
+}
+
+.material-page ul li{
+    margin-bottom: 10px;
+}
+
+.material-page p {
+    margin-bottom: 10px;;
+}
+
+
+.material-page ol {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+}
+
+.material-page ol li {
+  display: block;
+}
+
+.material-page ol li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
+.material-page ol > ol {
+  counter-reset: item;
+  margin-left: 24px;
+  padding-left: 0;
+}

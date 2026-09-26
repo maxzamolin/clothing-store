@@ -1,0 +1,109 @@
+.auth-page {
+    height: calc(100% - 85px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-page .container-min {
+    width: 100%;
+}
+
+.auth-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.auth-header .title {
+    font-size: 18px;
+}
+
+.auth-header .subtitle {
+    color: var(--text-secondary);
+    margin-top: 10px;
+}
+
+.auth-page .form-group + .form-group {
+    margin-top: 10px;
+}
+
+.auth-page .form-link {
+    margin-top: 10px;
+    display: inline-block;
+    transition: var(--transition-all);
+}
+
+.auth-page .form-link:hover {
+    color: var(--text-primary);
+}
+
+.auth-page .btn-primary {
+    margin-top: 30px;
+}
+
+.auth-page .agreement {
+    margin-top: 30px;
+    padding: 0;
+}
+
+.code-input {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.code-box {
+    flex: 1 60px;
+    width: auto;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid var(--color-gray-200);
+    transition: var(--transition-all);
+}
+
+.code-box:hover {
+    border-color: var(--color-accent);
+}
+
+.code-box:focus {
+    border-color: var(--color-accent);
+    outline: none;
+}
+
+.input-password, .input-phone {
+    position: relative;
+    width: 100%;
+}
+
+.input-phone input {
+    padding-left: 60px;
+}
+
+.togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translate(0px, -50%);
+    display: flex;
+}
+
+.togglePassword:hover {
+    cursor: pointer;
+}
+
+.togglePassword svg path {
+    transition: var(--transition-all);
+}
+
+.togglePassword:hover svg path {
+    fill: var(--text-secondary);
+}
+
+.select-country {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translate(0px, -50%);
+}
