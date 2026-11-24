@@ -1,0 +1,14 @@
+export { default as Catalog } from './catalog/Catalog';
+export { default as Contacts } from './contacts/Contacts';
+export { default as Profile } from './account/Profile';
+export { default as Orders } from './orders/Orders';
+export { default as Certificates } from './certificates/Certificates';
+export { default as Sending } from './sending/Sending';
+export { default as Cart } from './cart/Cart';
+export { default as Product } from './product/Product';
+export { default as Password } from './password/Password';
+export { default as Login } from './login/Login';
+export { default as Register } from './register/Register';
+export { default as Address } from './address/Address';
+export { default as AddAddress } from './address/AddAddress';
+export { default as PasswordReset } from './password-reset/PasswordReset';

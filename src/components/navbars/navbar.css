@@ -1,0 +1,30 @@
+.nav-menu {
+    margin-left: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity .3s ease, transform .3s ease, visibility .3s;
+}
+
+.nav-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu ul li + li {
+    margin-left: 32px;
+    line-height: 1;;
+}
+
+.nav-menu ul li a.active {
+    text-decoration: underline;
+}
