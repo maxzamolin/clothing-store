@@ -6,6 +6,8 @@ WORKDIR /app
 # Сначала копируем только файлы зависимостей, чтобы использовать кэш слоёв Docker
 COPY package.json package-lock.json ./
 
+RUN npm install -g npm@11
+
 # Устанавливаем зависимости (npm ci быстрее и надёжнее, чем npm install)
 RUN npm ci
 
